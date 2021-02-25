@@ -1,0 +1,55 @@
+html 
+    head 
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        title="hola mundo"
+    body
+
+    <h1>ESCRIBE TU PROPIO PRODUCTO👍🤓</h1>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <div class="col-12 card">
+                        <div class="card-body">
+                            <form action="/" method="POST">
+                                <input type="text" placeholder="Ingrese Nombre del Producto..." name="title" class="form-control mt-2" />
+                                <input type="number" placeholder="Ingrese Precio del Producto..." name="price" class="form-control mt-2" />
+                                <input type="text" placeholder="Ingrese Thumbnail del Producto..." name="thumbnail" class="form-control mt-2" />
+                                <button type="submit" class="btn btn-success btn-block w-100 mt-2">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2>aqui veras tus productos💻🙂🤌</h2>
+                <div class="col-12 mt-5">
+                    <div class="col-12 text-center">
+                        <div class="card">
+                            <div class="card-body">mis lindos productos💕</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12">
+                        <table class="table table-striped table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Thumbnail</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                each product in Productos 
+                                    tr
+                                        th(scope="row")=product.id
+                                        td=product.title
+                                        td=product.price
+                                        td=product.thumbnail
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
